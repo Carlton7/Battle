@@ -1,8 +1,9 @@
-<h1> Player 1 = <%= @player1 %> </h1>
-<h1> Player 2 = <%= @player2 %> </h1>
-
-<form action=/ method="post">
-    <label for="name">Player1 Name:</label>
-    <input type="text" name="name">
+<h1>Prepare For Battle!</h1>
+<h2>Provide Player Names</h2>
+<form action=/player_names method="post">
+    <label for="player_1_name"> Player 1 Name: </label>
+    <input type="text" name="player_1_name">
+    <label for="player_2_name"> Player 2 Name: </label>
+    <input type="text" name="player_2_name">
     <input type="submit" value="Submit">
 </form>

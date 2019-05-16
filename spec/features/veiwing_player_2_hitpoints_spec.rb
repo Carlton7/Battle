@@ -4,7 +4,8 @@
 
     scenario "expects players to fill in their names" do
         sign_in_and_play
-        expect(page).to have_content "carlton vs. lucy"
+        click_button 'Player 1 Attack'
+        expect(page).to have_content "carlton attacked lucy"
     end 
 
   end
